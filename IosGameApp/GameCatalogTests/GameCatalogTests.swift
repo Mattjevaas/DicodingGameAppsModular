@@ -64,7 +64,7 @@ final class GameCatalogTests: XCTestCase {
                 }
             }, receiveValue: { result in
                 data = result
-            }).store(in: &cancellables)1
+            }).store(in: &cancellables)
         
         
         let realmGameData = GameRealmEntity()
