@@ -8,12 +8,9 @@ workflows:
           XCODE_PROJECT: "GameCatalog.xcodeproj" # Isikan nama project Anda.
           XCODE_SCHEME: "GameCatalog" # Isikan nama scheme project Anda.
     scripts:
-     - name: Check Directory
-        script: |
-          ls -la
       - name: Enter Directory
         script: |
-          pwd
+          cd IosGameApp && pwd
       - name: Run tests
         script: |
           xcodebuild \
