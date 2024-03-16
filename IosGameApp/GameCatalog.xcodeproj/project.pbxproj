@@ -453,7 +453,6 @@
 			);
 			mainGroup = 84728E6F28D30E9A00127063;
 			packageReferences = (
-				84A703C42BA3ECBD00CD69B5 /* XCLocalSwiftPackageReference "../Modules/Core" */,
 				84A703C52BA3ED7400CD69B5 /* XCLocalSwiftPackageReference "../Modules/GameDLC" */,
 				84A703C62BA3ED8200CD69B5 /* XCLocalSwiftPackageReference "../Modules/GameMod" */,
 				84A703C72BA3EE9200CD69B5 /* XCRemoteSwiftPackageReference "Alamofire" */,
@@ -463,6 +462,7 @@
 				84A703CB2BA3F45100CD69B5 /* XCRemoteSwiftPackageReference "SkeletonView" */,
 				84A703CC2BA408B900CD69B5 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				84A703D72BA412CE00CD69B5 /* XCRemoteSwiftPackageReference "Swinject" */,
+				84A703DC2BA61B5400CD69B5 /* XCRemoteSwiftPackageReference "GameModularCorePackage" */,
 			);
 			productRefGroup = 84728E7928D30E9A00127063 /* Products */;
 			projectDirPath = "";
@@ -797,10 +797,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		84A703C42BA3ECBD00CD69B5 /* XCLocalSwiftPackageReference "../Modules/Core" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ../Modules/Core;
-		};
 		84A703C52BA3ED7400CD69B5 /* XCLocalSwiftPackageReference "../Modules/GameDLC" */ = {
 			isa = XCLocalSwiftPackageReference;
 			relativePath = ../Modules/GameDLC;
@@ -866,6 +862,14 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 2.8.4;
+			};
+		};
+		84A703DC2BA61B5400CD69B5 /* XCRemoteSwiftPackageReference "GameModularCorePackage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Mattjevaas/GameModularCorePackage.git";
+			requirement = {
+				kind = exactVersion;
+				version = 1.0.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
