@@ -10,7 +10,7 @@ workflows:
     scripts:
       - name: Enter Directory
         script: |
-          cd IosGameApp
+          pwd
       - name: Run tests
         script: |
           xcodebuild \
