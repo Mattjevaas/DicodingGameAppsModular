@@ -46,13 +46,16 @@ public final class GameLocaleDataSource: LocaleDataSource {
             if let realm = self.realm {
                 do {
                     
-                    let data = realm.objects(type).filter(predicate).first
+                    guard let data = realm.objects(type).filter(predicate).first else {
+                        return completion(.failure(DatabaseError.alreadyDeleted))
+                    }
                     
                     try realm.write {
-                        realm.delete(data!)
+                        realm.delete(data)
                         
                         completion(.success(true))
                     }
+                
                 } catch {
                     completion(.failure(DatabaseError.requestFailed))
                 }

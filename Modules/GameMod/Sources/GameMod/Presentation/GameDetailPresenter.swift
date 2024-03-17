@@ -155,7 +155,7 @@ GameDLCUseCase.Response == [GameDLCModel] {
             .sink(receiveCompletion: { completion in
                 switch completion {
                 case .failure:
-                    self.errordelegate?.showError(msg: String(describing: completion))
+                    self.errordelegate?.showError(msg: "Already deleted")
                 case .finished:
                     break
                 }

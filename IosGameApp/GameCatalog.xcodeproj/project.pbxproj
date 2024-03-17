@@ -19,6 +19,7 @@
 		84A703D62BA40A6100CD69B5 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 84A703D52BA40A6100CD69B5 /* RealmSwift */; };
 		84A703D92BA412CE00CD69B5 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 84A703D82BA412CE00CD69B5 /* Swinject */; };
 		84A703DB2BA573E700CD69B5 /* SkeletonView in Frameworks */ = {isa = PBXBuildFile; productRef = 84A703DA2BA573E700CD69B5 /* SkeletonView */; };
+		84A703DE2BA7473A00CD69B5 /* Core in Frameworks */ = {isa = PBXBuildFile; productRef = 84A703DD2BA7473A00CD69B5 /* Core */; };
 		84C0F3B52ACA7266000FB90F /* GameDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C0F3B42ACA7266000FB90F /* GameDetailRouter.swift */; };
 		84D9274E2918ECC000C882F1 /* GameCatalogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D9274D2918ECC000C882F1 /* GameCatalogTests.swift */; };
 		84D9279C2918ED1400C882F1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D927592918ED1300C882F1 /* HomeView.swift */; };
@@ -98,6 +99,7 @@
 				84A703D02BA409D500CD69B5 /* GameMod in Frameworks */,
 				84A703D42BA40A6100CD69B5 /* Realm in Frameworks */,
 				84A703D62BA40A6100CD69B5 /* RealmSwift in Frameworks */,
+				84A703DE2BA7473A00CD69B5 /* Core in Frameworks */,
 				84A703D22BA409FA00CD69B5 /* Core in Frameworks */,
 				84A703D92BA412CE00CD69B5 /* Swinject in Frameworks */,
 			);
@@ -401,6 +403,7 @@
 				84A703D52BA40A6100CD69B5 /* RealmSwift */,
 				84A703D82BA412CE00CD69B5 /* Swinject */,
 				84A703DA2BA573E700CD69B5 /* SkeletonView */,
+				84A703DD2BA7473A00CD69B5 /* Core */,
 			);
 			productName = GameCatalog;
 			productReference = 84728E7828D30E9A00127063 /* GameCatalog.app */;
@@ -869,7 +872,7 @@
 			repositoryURL = "https://github.com/Mattjevaas/GameModularCorePackage.git";
 			requirement = {
 				kind = exactVersion;
-				version = 1.0.1;
+				version = 1.0.3;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -907,6 +910,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 84A703CB2BA3F45100CD69B5 /* XCRemoteSwiftPackageReference "SkeletonView" */;
 			productName = SkeletonView;
+		};
+		84A703DD2BA7473A00CD69B5 /* Core */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 84A703DC2BA61B5400CD69B5 /* XCRemoteSwiftPackageReference "GameModularCorePackage" */;
+			productName = Core;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

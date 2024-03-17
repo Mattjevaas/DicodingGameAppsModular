@@ -13,7 +13,7 @@ let package = Package(
             targets: ["GameDLC"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/Mattjevaas/GameModularCorePackage.git", exact: "1.0.1"),
+        .package(url: "https://github.com/Mattjevaas/GameModularCorePackage.git", exact: "1.0.3"),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
